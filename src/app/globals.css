@@ -47,6 +47,138 @@
   --green_900: #357e48;
 }
 
+.light-theme {
+  /* Primary Colors */
+  --primary_50: #e6fffa;
+  --primary_100: #b2f5ea;
+  --primary_200: #81e6d9;
+  --primary_300: #4fd1c5;
+  --primary_400: #38b2ac;
+  --primary_500: #319795;
+  --primary_600: #2c7a7b;
+  --primary_700: #285e61;
+  --primary_800: #234e52;
+  --primary_900: #1d4044;
+
+  /* Secondary Colors */
+  --secondary_50: #ebf8ff;
+  --secondary_100: #bee3f8;
+  --secondary_200: #90cdf4;
+  --secondary_300: #63b3ed;
+  --secondary_400: #4299e1;
+  --secondary_500: #3182ce;
+  --secondary_600: #2b6cb0;
+  --secondary_700: #2c5282;
+  --secondary_800: #2a4365;
+  --secondary_900: #1a365d;
+
+  /* Neutral Colors */
+  --neutral_50: #e0e2e3;
+  --neutral_100: #cccfd0;
+  --neutral_200: #b8bcbd;
+  --neutral_300: #aeb2b3;
+  --neutral_400: #a3a9aa;
+  --neutral_500: #8f9597;
+  --neutral_600: #7b8284;
+  --neutral_700: #686e70;
+  --neutral_800: #555a5b;
+  --neutral_900: #424647;
+
+  /* Purple */
+  --purple_50: #faf5ff;
+  --purple_100: #e9d8fd;
+  --purple_200: #d6bcfa;
+  --purple_300: #b794f4;
+  --purple_400: #9f7aea;
+  --purple_500: #805ad5;
+  --purple_600: #6b46c1;
+  --purple_700: #553c9a;
+  --purple_800: #44337a;
+  --purple_900: #322659;
+
+  /* Green Colors */
+  --green_100: #d8f3dc;
+  --green_200: #b8e4c8;
+  --green_300: #9ad8b4;
+  --green_400: #7fd49f;
+  --green_500: #6bc493;
+  --green_600: #5ca376;
+  --green_700: #4d9e63;
+  --green_800: #408955;
+  --green_900: #357e48;
+
+  /* Error Colors */
+  --error: #c53030;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.dark-theme {
+  /* Primary Colors */
+  --primary_50: #1d4044;
+  --primary_100: #234e52;
+  --primary_200: #285e61;
+  --primary_300: #2c7a7b;
+  --primary_400: #319795;
+  --primary_500: #38b2ac;
+  --primary_600: #4fd1c5;
+  --primary_700: #81e6d9;
+  --primary_800: #bee3f8;
+  --primary_900: #e6fffa;
+
+  /* Secondary Colors */
+  --secondary_50: #1a365d;
+  --secondary_100: #2a4365;
+  --secondary_200: #2c5282;
+  --secondary_300: #2b6cb0;
+  --secondary_400: #3182ce;
+  --secondary_500: #4299e1;
+  --secondary_600: #63b3ed;
+  --secondary_700: #90cdf4;
+  --secondary_800: #bee3f8;
+  --secondary_900: #ebf8ff;
+
+  /* Neutral Colors */
+  --neutral_50: #424647;
+  --neutral_100: #555a5b;
+  --neutral_200: #686e70;
+  --neutral_300: #7b8284;
+  --neutral_400: #8f9597;
+  --neutral_500: #a3a9aa;
+  --neutral_600: #aeb2b3;
+  --neutral_700: #b8bcbd;
+  --neutral_800: #cccfd0;
+  --neutral_900: #e0e2e3;
+
+  /* Other Colors */
+  --error: #c53030;
+  --black: #ffffff;
+  --white: #000000;
+
+  /* Purple */
+  --purple_50: #322659;
+  --purple_100: #44337a;
+  --purple_200: #553c9a;
+  --purple_300: #6b46c1;
+  --purple_400: #805ad5;
+  --purple_500: #9f7aea;
+  --purple_600: #b794f4;
+  --purple_700: #d6bcfa;
+  --purple_800: #e9d8fd;
+  --purple_900: #faf5ff;
+
+  /* Green Colors */
+  --green_100: #1b3a4c;
+  --green_200: #1e503d;
+  --green_300: #1f682d;
+  --green_400: #1f793a;
+  --green_500: #218758;
+  --green_600: #26a55a;
+  --green_700: #28b764;
+  --green_800: #2cc76e;
+  --green_900: #2fd78b;
+}
+
 *,
 *::after,
 *::before {
