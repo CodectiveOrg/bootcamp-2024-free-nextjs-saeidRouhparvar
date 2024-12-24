@@ -9,7 +9,7 @@ import clsx from "clsx";
 
 const navItem = [
   { id: 0, title: "خانه", href: "/" },
-  { id: 0, title: "درباره ما", href: "/about" },
+  { id: 1, title: "درباره ما", href: "/about" },
 ];
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className={style.header}>
       <nav>
-        <ul>
+        <ul className="nav">
           {navItem.map((item: any) => (
             <li key={item?.id}>
               <Link

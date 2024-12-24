@@ -5,6 +5,7 @@
   > nav {
     > ul {
       display: flex;
+      gap: 2rem;
       font-weight: 500;
       > li {
         a {
