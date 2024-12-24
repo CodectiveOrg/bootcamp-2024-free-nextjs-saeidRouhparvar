@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState("dark"); 
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -15,7 +15,7 @@ export const useTheme = () => {
     const root = document.documentElement;
     root.classList.remove("light-theme", "dark-theme");
     root.classList.add(`${theme}-theme`);
-    
+
     if (typeof window !== "undefined") {
       localStorage.setItem("theme", theme);
     }

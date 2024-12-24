@@ -1,9 +1,10 @@
 button {
   border-radius: var(--border-radius);
   border: 1px solid;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
   text-align: center;
+  white-space: nowrap;
   transition: var(--animation-duration-slow);
 
   &.fill {
@@ -36,15 +37,15 @@ button {
   }
 
   &.sm {
-    height: 2rem;
+    height: 1.5rem;
     font-size: 0.75rem;
   }
   &.md {
-    height: 3rem;
+    height: 2.5rem;
     font-size: 0.875rem;
   }
   &.lg {
-    height: 3.5rem;
+    height: 3rem;
     font-size: 1rem;
   }
 }
