@@ -24,6 +24,9 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <p className="tag">
+          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+        </p>
         <Footer />
       </body>
     </html>
