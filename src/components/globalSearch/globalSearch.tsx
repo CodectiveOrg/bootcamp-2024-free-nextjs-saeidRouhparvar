@@ -2,8 +2,9 @@ import MingcuteSearchLine from "@/icons/MingcuteSearchLine";
 import style from "./globalSearch.module.css";
 import { Button } from "../uiKit/Button";
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
+import { ReactElement } from "react";
 
-const GlobalSearch = () => {
+const GlobalSearch = (): ReactElement => {
   return (
     <div className={style.global}>
       <div className={style.prefix}>
@@ -16,12 +17,9 @@ const GlobalSearch = () => {
       <div className={style.divider}></div>
       <div className={style.suffix}>
         <MingcuteLocationLine className="svg" />
-        <Button
-          size="lg"
-          variant="text"
-          children="همه شهرها"
-          className={style.btn}
-        />
+        <Button size="lg" variant="text" className={style.btn}>
+          همه شهرها
+        </Button>
       </div>
     </div>
   );
