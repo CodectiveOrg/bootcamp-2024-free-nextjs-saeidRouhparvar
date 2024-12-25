@@ -3,7 +3,7 @@
 import GlobalSearch from "@/components/globalSearch/globalSearch";
 import style from "./page.module.css";
 import MingcuteStethoscopeLine from "@/logo/MingcuteStethoscopeLine";
- const Home = () => {
+const Home = () => {
   return (
     <div className={style.home}>
       <h1>
@@ -20,5 +20,5 @@ import MingcuteStethoscopeLine from "@/logo/MingcuteStethoscopeLine";
       </div>
     </div>
   );
-}
-export default Home
+};
+export default Home;

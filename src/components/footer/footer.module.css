@@ -32,7 +32,7 @@
     }
     .social {
       display: flex;
-      gap: .875rem;
+      gap: 0.875rem;
       li {
         padding: 0;
       }
@@ -48,7 +48,7 @@
   .copy {
     grid-area: copy;
     text-align: center;
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: var(--neutral_600);
   }
 }

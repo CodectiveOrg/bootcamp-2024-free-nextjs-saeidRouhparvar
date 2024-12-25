@@ -15,8 +15,13 @@ const GlobalSearch = () => {
       />
       <div className={style.divider}></div>
       <div className={style.suffix}>
-        <MingcuteLocationLine className="svg"/>
-        <Button size="lg" variant="text" children="همه شهرها" className={style.btn}/>
+        <MingcuteLocationLine className="svg" />
+        <Button
+          size="lg"
+          variant="text"
+          children="همه شهرها"
+          className={style.btn}
+        />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ type Post = {
 
 const About = async () => {
   const res: Response = await fetch(
-    "https://jsonplaceholder.typicode.com/posts"
+    "https://jsonplaceholder.typicode.com/posts",
   );
 
   const posts: Post[] = await res.json();
@@ -13,11 +13,7 @@ const About = async () => {
   return (
     <main>
       <h1>سلام!!!</h1>
-      <ul>
-        {posts?.map((item) => (
-          <li key={item?.id}>{item?.title}</li>
-        ))}
-      </ul>
+      <ul>{posts?.map((item) => <li key={item?.id}>{item?.title}</li>)}</ul>
     </main>
   );
 };
