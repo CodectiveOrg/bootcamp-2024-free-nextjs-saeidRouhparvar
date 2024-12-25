@@ -12,7 +12,13 @@ import MingcuteLinkedinFill from "@/icons/MingcuteLinkedinFill";
 
 import style from "./footer.module.css";
 
-const logos = [
+type LogoItem = {
+  id: number;
+  src: string;
+  alt: string;
+};
+
+const logos: LogoItem[] = [
   { id: 0, src: idk, alt: "idk" },
   { id: 1, src: nomad, alt: "nomad" },
   { id: 2, src: nomaad, alt: "nomaad" },
@@ -36,7 +42,7 @@ const Footer = (): ReactElement => {
         </div>
         <div className={style.visuals}>
           <ul className={style.certificate}>
-            {logos.map((item: any) => (
+            {logos.map((item) => (
               <li key={item.id}>
                 <Link href={"#"}>
                   <Image style={{ padding: 0 }} src={item.src} alt={item.alt} />
