@@ -1,8 +1,24 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import GlobalSearch from "@/components/globalSearch/globalSearch";
+import style from "./page.module.css";
+import MingcuteStethoscopeLine from "@/logo/MingcuteStethoscopeLine";
+ const Home = () => {
   return (
-   <h1>سلام</h1>
+    <div className={style.home}>
+      <h1>
+        <MingcuteStethoscopeLine />
+        استایم
+      </h1>
+      <GlobalSearch />
+      <div className={style.history}>
+        <div className={style.title}>آخرین جستجوهای شما</div>
+        <ul>
+          <li>مغز و اعصاب</li>
+          <li>گوارش </li>
+        </ul>
+      </div>
+    </div>
   );
 }
+export default Home
