@@ -1,0 +1,54 @@
+.global {
+  display: flex;
+  align-items: center;
+  grid-area: 0.5rem;
+
+  inline-size: min(50rem, 100%);
+  padding-inline: 1rem;
+
+  border: 1px solid var(--neutral_100);
+  border-radius: 99px;
+
+  .prefix {
+    display: grid;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  input {
+    flex: 1 1 0;
+    background-color: transparent;
+    padding: 1rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .divider {
+    background-color: var(--neutral_100);
+    block-size: 2em;
+    inline-size: 1px;
+  }
+
+  .suffix {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      padding-inline-start: 0.5rem;
+    }
+  }
+
+  &:focus-within {
+    border-color: var(--primary_400);
+    .prefix {
+      color: var(--primary_400);
+    }
+  }
+}

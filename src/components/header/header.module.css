@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  > nav {
+    > ul {
+      display: flex;
+      gap: 2rem;
+      font-weight: 500;
+      > li {
+        a {
+          font-size: 1.25rem;
+          &.active {
+            color: var(--primary_600);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .cta {
+    display: flex;
+    gap: 1rem;
+  }
+}
