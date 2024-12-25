@@ -7,7 +7,13 @@ import { Button } from "../uiKit/Button";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
-const navItem = [
+type NavItem = {
+  id: number;
+  title: string;
+  href: string;
+};
+
+const navItem: NavItem[] = [
   { id: 0, title: "خانه", href: "/" },
   { id: 1, title: "درباره ما", href: "/about" },
 ];
@@ -20,7 +26,7 @@ const Header = () => {
     <header className={style.header}>
       <nav>
         <ul className="nav">
-          {navItem.map((item: any) => (
+          {navItem.map((item) => (
             <li key={item?.id}>
               <Link
                 href={item.href}
