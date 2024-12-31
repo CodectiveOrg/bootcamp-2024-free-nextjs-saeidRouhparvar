@@ -21,6 +21,10 @@
 
   .cta {
     display: flex;
+    align-items: center;
     gap: 1rem;
+    .theme {
+      padding: 5px;
+    }
   }
 }
