@@ -52,6 +52,7 @@ const Header = () => {
           ) : (
             <MingcuteSunLine fontSize={28} color="#38b2ac" />
           )}
+          </Button>
       </div>
     </header>
   );
