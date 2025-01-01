@@ -14,7 +14,7 @@ const notFound = () => {
           <div className={style.desc}>صفحه مورد نظر پیدا نشد...!</div>
           <GlobalSearch />
         </div>
-          <Image src={error_404} alt="" className="img" />
+        <Image src={error_404} alt="" className="img" />
       </div>
     </div>
   );
