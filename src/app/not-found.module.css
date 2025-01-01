@@ -22,12 +22,12 @@
     gap: 0.5rem;
 
     .title {
-      font-size: 3rem;
+      font-size: var(--fs-700);
       font-weight: 700;
     }
 
     .desc {
-      font-size: 2rem;
+      font-size: var(--fs-600);
       font-weight: 500;
     }
   }

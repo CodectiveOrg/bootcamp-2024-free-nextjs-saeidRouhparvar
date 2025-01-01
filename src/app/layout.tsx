@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Vazirmatn } from "next/font/google";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 
+import "./globals.css";
+import '@/styles/typography.css'
 export const metadata: Metadata = {
   title: "استایم",
   description: "پلتفرم رزرو آنلاین نوبت دکتر",
