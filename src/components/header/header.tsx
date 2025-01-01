@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+
 import { useTheme } from "@/app/hooks/useTheme";
 import { Button } from "../uiKit/Button";
 import { usePathname } from "next/navigation";
@@ -51,7 +52,6 @@ const Header = () => {
           ) : (
             <MingcuteSunLine fontSize={28} color="#38b2ac" />
           )}
-        </Button>
       </div>
     </header>
   );

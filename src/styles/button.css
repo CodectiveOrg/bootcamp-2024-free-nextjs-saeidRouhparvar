@@ -47,5 +47,14 @@ button {
   &.lg {
     height: 3rem;
     font-size: var(--fs-300);
+    font-size: 0.75rem;
+  }
+  &.md {
+    height: 2.5rem;
+    font-size: 0.875rem;
+  }
+  &.lg {
+    height: 3rem;
+    font-size: 1rem;
   }
 }
