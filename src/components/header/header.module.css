@@ -9,7 +9,7 @@
       font-weight: 500;
       > li {
         a {
-          font-size: 1.25rem;
+          font-size: var(--fs-400);
           &.active {
             color: var(--primary_600);
             font-weight: 700;
@@ -21,6 +21,11 @@
 
   .cta {
     display: flex;
+    align-items: center;
+    gap: 1rem;
+    .theme {
+      padding: 5px;
+    }
     gap: 1rem;
   }
 }

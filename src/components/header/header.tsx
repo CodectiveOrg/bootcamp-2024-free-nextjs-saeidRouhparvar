@@ -1,11 +1,15 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import style from "./header.module.css";
+
 import { useTheme } from "@/app/hooks/useTheme";
 import { Button } from "../uiKit/Button";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import MingcuteMoonLine from "@/icons/MingcuteMoonLine";
+import MingcuteSunLine from "@/icons/MingcuteSunLine";
+
+import style from "./header.module.css";
 
 type NavItem = {
   id: number;
@@ -42,8 +46,12 @@ const Header = () => {
         <Button onClick={toggleTheme} size="md">
           ورود | ثبت نام
         </Button>
-        <Button onClick={toggleTheme} variant="outline" size="md">
-          {theme === "light" ? "Dark" : "Light"} Mode
+        <Button onClick={toggleTheme} className={style.theme} variant="outline">
+          {theme === "light" ? (
+            <MingcuteMoonLine fontSize={28} color="#38b2ac" />
+          ) : (
+            <MingcuteSunLine fontSize={28} color="#38b2ac" />
+          )}
         </Button>
       </div>
     </header>

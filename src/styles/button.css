@@ -38,6 +38,15 @@ button {
 
   &.sm {
     height: 1.5rem;
+    font-size: var(--fs-100);
+  }
+  &.md {
+    height: 2.5rem;
+    font-size: var(--fs-200);
+  }
+  &.lg {
+    height: 3rem;
+    font-size: var(--fs-300);
     font-size: 0.75rem;
   }
   &.md {
