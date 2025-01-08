@@ -1,3 +1,5 @@
+'use client'
+
 import MingcuteSearchLine from "@/icons/MingcuteSearchLine";
 import style from "./globalSearch.module.css";
 import { Button } from "../uiKit/Button";
