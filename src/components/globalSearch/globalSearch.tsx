@@ -1,10 +1,35 @@
+"use client";
+
 import MingcuteSearchLine from "@/icons/MingcuteSearchLine";
 import style from "./globalSearch.module.css";
 import { Button } from "../uiKit/Button";
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
-import { ReactElement } from "react";
+import { ChangeEvent, ReactElement, ReactNode, useState } from "react";
 
-const GlobalSearch = (): ReactElement => {
+type GlobalSearchProps = {
+  data?: any;
+  setResults?: any;
+};
+
+const GlobalSearch = ({
+  data,
+  setResults,
+}: GlobalSearchProps): ReactElement => {
+  const [search, setSearch] = useState<string>("");
+
+  const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    if (data) {
+      const lowercasedFilter = search.toLowerCase();
+      const filteredArray = data?.filter((item: any) =>
+        Object.keys(item)?.some((key) =>
+          String(item[key]).toLowerCase().includes(lowercasedFilter),
+        ),
+      );
+      setResults(filteredArray);
+    }
+    setSearch(e.target.value);
+  };
+
   return (
     <div className={style.global}>
       <div className={style.prefix}>
@@ -13,6 +38,7 @@ const GlobalSearch = (): ReactElement => {
       <input
         type="text"
         placeholder="نام بیماری، تخصص، پزشک، بیمارستان و ..."
+        onChange={handleSearch}
       />
       <div className={style.divider}></div>
       <div className={style.suffix}>
