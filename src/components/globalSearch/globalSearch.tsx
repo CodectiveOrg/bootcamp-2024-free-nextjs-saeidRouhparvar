@@ -1,14 +1,13 @@
-"use client";
-
 import MingcuteSearchLine from "@/icons/MingcuteSearchLine";
 import style from "./globalSearch.module.css";
 import { Button } from "../uiKit/Button";
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
 import { ChangeEvent, ReactElement, useState } from "react";
+import { DoctorModel } from "@/types/doctor.model"; 
 
 type GlobalSearchProps = {
-  data?: Array<Record<string, any>>;
-  setResults?: (filteredData: Array<Record<string, any>>) => void;
+  data?: DoctorModel[];
+  setResults?: (results: DoctorModel[]) => void;
 };
 
 const GlobalSearch = ({
@@ -18,14 +17,16 @@ const GlobalSearch = ({
   const [search, setSearch] = useState<string>("");
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    if (data && setResults) {
+    if (data) {
       const lowercasedFilter = search.toLowerCase();
-      const filteredArray = data?.filter((item) =>
-        Object.keys(item)?.some((key) =>
-          String(item[key]).toLowerCase().includes(lowercasedFilter),
+      const filteredArray = data.filter((item) =>
+        Object.keys(item).some((key) =>
+          String(item[key as keyof DoctorModel])
+            .toLowerCase()
+            .includes(lowercasedFilter),
         ),
       );
-      setResults(filteredArray);
+      setResults?.(filteredArray); 
     }
     setSearch(e.target.value);
   };

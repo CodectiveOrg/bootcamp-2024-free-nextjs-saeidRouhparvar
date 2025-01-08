@@ -63,7 +63,6 @@ const Search = () => {
                   { id: 1, title: "کمترین معطلی", value: "" },
                 ]}
                 placeholder="مرتب سازی بر اساس"
-                onChange={(e) => setResults(e.title)}
               />
             </div>
             <div className={style.res}>{filteredDoctors.length} نتیجه</div>

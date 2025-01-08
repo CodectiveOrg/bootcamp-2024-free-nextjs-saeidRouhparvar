@@ -20,7 +20,7 @@ type SelectProps = {
   label?: string;
   error?: string;
   placeholder?: string;
-  onChange?: (item: SelectOption) => void; // Properly typed onChange
+  onChange?: (item: SelectOption) => void;
   className?: string;
 };
 

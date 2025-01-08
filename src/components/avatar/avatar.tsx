@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import style from "./avatar.module.css";
 
@@ -9,7 +10,7 @@ type AvatarProps = {
 const Avatar = ({ src }: AvatarProps) => {
   return (
     <div className={style.avatar}>
-      <img alt="" src={src} />
+      <Image alt="" src={src} width={80} height={80} />
     </div>
   );
 };
