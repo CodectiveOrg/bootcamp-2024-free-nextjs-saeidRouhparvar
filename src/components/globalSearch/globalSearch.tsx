@@ -7,8 +7,8 @@ import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
 import { ChangeEvent, ReactElement, useState } from "react";
 
 type GlobalSearchProps = {
-  data?: any;
-  setResults?: any;
+  data?: Array<Record<string, any>>;
+  setResults?: (filteredData: Array<Record<string, any>>) => void;
 };
 
 const GlobalSearch = ({
@@ -18,9 +18,9 @@ const GlobalSearch = ({
   const [search, setSearch] = useState<string>("");
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    if (data) {
+    if (data && setResults) {
       const lowercasedFilter = search.toLowerCase();
-      const filteredArray = data?.filter((item: any) =>
+      const filteredArray = data?.filter((item) =>
         Object.keys(item)?.some((key) =>
           String(item[key]).toLowerCase().includes(lowercasedFilter),
         ),

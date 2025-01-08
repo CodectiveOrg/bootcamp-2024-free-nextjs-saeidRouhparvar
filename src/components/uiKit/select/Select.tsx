@@ -20,7 +20,7 @@ type SelectProps = {
   label?: string;
   error?: string;
   placeholder?: string;
-  onChange?: (item: any) => void;
+  onChange?: (item: SelectOption) => void; // Properly typed onChange
   className?: string;
 };
 
@@ -43,6 +43,7 @@ export const Select = ({
     setOpen(false);
     onChange?.(item);
   };
+
   return (
     <div className={style.select_box}>
       <div className={open ? style.active : style.label}>{label}</div>
