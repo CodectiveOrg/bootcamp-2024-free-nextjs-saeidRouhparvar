@@ -1,0 +1,8 @@
+.avatar img {
+  inline-size: 5rem;
+  block-size: 5rem;
+  display: grid;
+  place-content: center;
+  border: 1px solid var(--primary_800);
+  border-radius: 999px;
+}
