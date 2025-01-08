@@ -19,7 +19,8 @@ type NavItem = {
 
 const navItem: NavItem[] = [
   { id: 0, title: "خانه", href: "/" },
-  { id: 1, title: "درباره ما", href: "/about" },
+  { id: 1, title: "جستجوی پزشک", href: "/search" },
+  { id: 2, title: "درباره ما", href: "/about" },
 ];
 
 const Header = () => {
