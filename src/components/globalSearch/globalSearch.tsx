@@ -3,7 +3,7 @@ import style from "./globalSearch.module.css";
 import { Button } from "../uiKit/Button";
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
 import { ChangeEvent, ReactElement, useState } from "react";
-import { DoctorModel } from "@/types/doctor.model"; 
+import { DoctorModel } from "@/types/doctor.model";
 
 type GlobalSearchProps = {
   data?: DoctorModel[];
@@ -26,7 +26,7 @@ const GlobalSearch = ({
             .includes(lowercasedFilter),
         ),
       );
-      setResults?.(filteredArray); 
+      setResults?.(filteredArray);
     }
     setSearch(e.target.value);
   };
