@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import MingcuteSearchLine from "@/icons/MingcuteSearchLine";
 import style from "./globalSearch.module.css";
