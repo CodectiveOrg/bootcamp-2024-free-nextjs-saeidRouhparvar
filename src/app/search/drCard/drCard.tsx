@@ -31,7 +31,7 @@ const DrCard = ({ avatar, drName, drDesc, address, tag }: DrCardProps) => {
       <div className={style.address_tag}>
         <div>{address}</div>
         <div className={style.tags}>
-          {tag?.map((item: string) => <Tag>{item}</Tag>)}
+          {tag?.map((item: string,index) => <Tag key={index}>{item}</Tag>)}
         </div>
       </div>
       <div className={style.btns}>

@@ -34,7 +34,6 @@ export const Select = ({
 }: SelectProps) => {
   const [select, setSelect] = useState<SelectOption | null>(null);
   const [open, setOpen] = useState(false);
-  const [contentHeight, setContentHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement | null>(null);
 
   useOutsideClick(contentRef, () => setOpen(false));

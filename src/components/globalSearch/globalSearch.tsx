@@ -4,7 +4,7 @@ import MingcuteSearchLine from "@/icons/MingcuteSearchLine";
 import style from "./globalSearch.module.css";
 import { Button } from "../uiKit/Button";
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
-import { ChangeEvent, ReactElement, ReactNode, useState } from "react";
+import { ChangeEvent, ReactElement, useState } from "react";
 
 type GlobalSearchProps = {
   data?: any;
