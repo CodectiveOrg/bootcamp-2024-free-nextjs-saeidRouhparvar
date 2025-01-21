@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
         <Header />
-        <main>{children}</main>
+        <main> {children}</main>
         <p className="tag">
           نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
         </p>

@@ -1,0 +1,14 @@
+.tag {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  background-color: var(--secondary_50);
+  font-size: var(--fs-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .close {
+    cursor: pointer;
+  }
+}
