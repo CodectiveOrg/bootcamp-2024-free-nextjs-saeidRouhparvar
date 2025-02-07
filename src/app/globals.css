@@ -250,3 +250,17 @@ body {
   background: var(--green_900);
   border-radius: 10px;
 }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background-color: hsl(from var(--green_500) h s l /0.5);
+backdrop-filter: blur(2px);
+
+  inset: 0;
+  position: fixed;
+  z-index: 9999;
+}
