@@ -76,6 +76,7 @@ const Search = () => {
                 drName={doctor.name}
                 drDesc={doctor.brief}
                 tag={doctor.badges}
+                getVisit={doctor.id}
               />
             ))}
           </div>

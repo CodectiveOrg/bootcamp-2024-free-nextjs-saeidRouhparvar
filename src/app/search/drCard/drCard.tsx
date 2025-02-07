@@ -6,6 +6,7 @@ import Avatar from "@/components/avatar/avatar";
 
 import MainBox from "@/components/mainBox/mainBox";
 import Tag from "@/components/tag/Tag";
+import Link from "next/link";
 
 type DrCardProps = {
   avatar: string;
@@ -13,9 +14,10 @@ type DrCardProps = {
   drDesc: string;
   address: string;
   tag: string[];
+  getVisit:number | string
 };
 
-const DrCard = ({ avatar, drName, drDesc, address, tag }: DrCardProps) => {
+const DrCard = ({ avatar, drName, drDesc, address, tag,getVisit }: DrCardProps) => {
   return (
     <MainBox className={style.main}>
       <div className={style.main_content}>
@@ -36,7 +38,9 @@ const DrCard = ({ avatar, drName, drDesc, address, tag }: DrCardProps) => {
       </div>
       <div className={style.btns}>
         <Button>ویزیت آنلاین</Button>
-        <Button>نوبت اینترنتی</Button>
+        <Button >
+          <Link href={`/doctor/${getVisit}`}>نوبت اینترنتی</Link>
+        </Button>
       </div>
     </MainBox>
   );
