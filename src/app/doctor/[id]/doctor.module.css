@@ -1,0 +1,49 @@
+.doctor {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(251, 247, 247);
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  grid-area: 1rem;
+
+  .avatar {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .title {
+        font-size: var(--fs-400);
+      }
+
+      .rates {
+
+        display: flex;
+        gap: 1rem;
+        .rate {
+          background-color: var(--green_200);
+          width: fit-content;
+          border-radius: 40%;
+          padding: 0.5rem;
+        }
+      }
+      .badge {
+        background-color: var(--green_100);
+        border-radius: 0.5rem;
+        padding: .5rem;
+      }
+    }
+  }
+
+  .visit {
+    width: fit-content;
+    text-align: end;
+    width: 100%;
+  }
+}
