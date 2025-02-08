@@ -1,12 +1,13 @@
 import React from "react";
 
-import style from "./drCard.module.css";
 import { Button } from "@/components/uiKit/Button";
 import Avatar from "@/components/avatar/avatar";
 
 import MainBox from "@/components/mainBox/mainBox";
 import Tag from "@/components/tag/Tag";
 import Link from "next/link";
+
+import style from "./drCard.module.css";
 
 type DrCardProps = {
   avatar: string;
