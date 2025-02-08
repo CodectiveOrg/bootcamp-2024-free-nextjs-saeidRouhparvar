@@ -23,7 +23,6 @@
       }
 
       .rates {
-
         display: flex;
         gap: 1rem;
         .rate {
@@ -36,7 +35,7 @@
       .badge {
         background-color: var(--green_100);
         border-radius: 0.5rem;
-        padding: .5rem;
+        padding: 0.5rem;
       }
     }
   }

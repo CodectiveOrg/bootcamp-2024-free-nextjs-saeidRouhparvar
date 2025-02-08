@@ -61,7 +61,7 @@ const Loading: React.FC<SpinnerProps> = ({
     },
   };
   return (
-    <div className={'spinner'}>
+    <div className={"spinner"}>
       <svg
         width={size}
         height={size}

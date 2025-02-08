@@ -257,8 +257,8 @@ body {
   align-items: center;
   width: 100%;
 
-  background-color: hsl(from var(--green_500) h s l /0.5);
-backdrop-filter: blur(2px);
+  background-color: hsl(from var(--green_500) h s l / 0.5);
+  backdrop-filter: blur(2px);
 
   inset: 0;
   position: fixed;
