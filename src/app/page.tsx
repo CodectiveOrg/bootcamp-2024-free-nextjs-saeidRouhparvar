@@ -1,6 +1,6 @@
 "use client";
 
-import GlobalSearch from "@/components/globalSearch/globalSearch";
+import GlobalSearch from "@/components/global-search/global-search";
 import style from "./page.module.css";
 import MingcuteStethoscopeLine from "@/logo/MingcuteStethoscopeLine";
 const Home = () => {

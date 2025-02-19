@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FilterProvider } from "./provider/filter.provider";
-import Search from "./mainSearch/Search";
+import Search from "./main-search/search";
 
 const Page = () => {
   return (

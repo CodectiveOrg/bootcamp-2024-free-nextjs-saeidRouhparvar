@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem("theme") || "dark";
+      const storedTheme = localStorage.getItem("theme") || "light";
       setTheme(storedTheme);
     }
   }, []);
