@@ -4,7 +4,7 @@ import error_404 from "@/assets/illustrations/404.png";
 
 import style from "./not-found.module.css";
 import Image from "next/image";
-import GlobalSearch from "@/components/globalSearch/globalSearch";
+import GlobalSearch from "@/components/global-search/global-search";
 const notFound = () => {
   return (
     <div className={style.not_found}>

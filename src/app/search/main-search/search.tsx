@@ -1,18 +1,18 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import GlobalSearch from "@/components/globalSearch/globalSearch";
-import MainBox from "@/components/mainBox/mainBox";
+import GlobalSearch from "@/components/global-search/global-search";
+import MainBox from "@/components/main-box/main-box";
 import clsx from "clsx";
 import { doctors } from "@/config/doctor";
 import { DoctorModel } from "@/types/doctor.model";
-import { Select } from "@/components/uiKit/select/Select";
 import { Button } from "@/components/uiKit/Button";
 import { useFilterContext } from "../provider/filter.provider";
-import DrCard from "../drCard/drCard";
+import DrCard from "../dr-card/dr-card";
 import Tag from "@/components/tag/Tag";
 
 import style from "./page.module.css";
+import { Select } from "@/components/uiKit/select/select";
 
 const Search = () => {
   const [results, setResults] = useState<DoctorModel[]>([]);

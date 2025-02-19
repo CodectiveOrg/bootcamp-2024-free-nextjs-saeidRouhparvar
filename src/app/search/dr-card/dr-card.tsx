@@ -3,11 +3,11 @@ import React from "react";
 import { Button } from "@/components/uiKit/Button";
 import Avatar from "@/components/avatar/avatar";
 
-import MainBox from "@/components/mainBox/mainBox";
-import Tag from "@/components/tag/Tag";
+import MainBox from "@/components/main-box/main-box";
 import Link from "next/link";
 
-import style from "./drCard.module.css";
+import style from "./dr-card.module.css";
+import Tag from "@/components/tag/Tag";
 
 type DrCardProps = {
   avatar: string;

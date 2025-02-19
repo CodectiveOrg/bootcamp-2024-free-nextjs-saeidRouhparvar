@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, HTMLAttributes } from "react";
 
-import style from "./mainBox.module.css";
+import style from "./main-box.module.css";
 import clsx from "clsx";
 
 type MainBoxProps = PropsWithChildren &
